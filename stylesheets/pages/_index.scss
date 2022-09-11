@@ -28,4 +28,15 @@ a {
     opacity: 0.7;
 }
 
+.fa--link {
+    display: flex;
+    line-height: 1;
+    font-size: clamp(1.2em, 1.3vw, 1.4em);
+    text-decoration: none;
+    
+    i {
+        margin-right: 1rem;
+    }
+}
+
 
