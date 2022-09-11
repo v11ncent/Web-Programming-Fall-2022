@@ -123,6 +123,7 @@ body {
 }
 
 .header {
+  text-align: center;
   padding: 1em;
 }
 .header h1 {
