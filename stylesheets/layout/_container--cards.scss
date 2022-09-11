@@ -8,7 +8,7 @@
 
         @media (max-width: $breakpoint--mobile) {
             &:first-child {
-                margin-left: 0.5em;
+                margin-left: $margin--header;
             }
         }
     }
