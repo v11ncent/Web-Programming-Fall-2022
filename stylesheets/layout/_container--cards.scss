@@ -1,0 +1,27 @@
+.container--cards {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+
+    li {
+        margin: calc(1.5em + 0.75vw);
+
+        @media (max-width: $breakpoint--mobile) {
+            &:first-child {
+                margin-left: 0.5em;
+            }
+        }
+    }
+
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr); 
+    // gap: 1em;
+
+    // @media (max-width: $breakpoint--tablet) {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+
+    // @media (max-width: ($breakpoint--mobile + 100px)) {
+    //     grid-template-columns: 1fr;
+    // }
+}
