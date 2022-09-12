@@ -9,15 +9,24 @@ body#assignment-1 {
         box-shadow: $shadow--1;
         max-width: 60%;
 
+        img {
+            filter: brightness(0.9);
+        }
+
         main > div:first-of-type {
             max-height: 400px;
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-bottom: 1.5em;
 
             img {
                 position: relative;
-                bottom: 10vw;
-            }
+                bottom: 5vw;
+
+                @media(max-width: 1400px) {
+                    bottom: 0;
+                }
+            }   
         }
        
         & > * {
@@ -66,7 +75,6 @@ body#assignment-1 {
             
             img {
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
             }
 
             figcaption {
