@@ -8,6 +8,17 @@ body#assignment-1 {
         margin-bottom: auto;
         box-shadow: $shadow--1;
         max-width: 60%;
+
+        main > div {
+            max-height: 400px;
+            overflow: hidden;
+            margin-bottom: 1em;
+
+            img {
+                position: relative;
+                bottom: 10vw;
+            }
+        }
        
         & > * {
             margin-bottom: 1.5em;
