@@ -199,7 +199,6 @@ body#assignment-1 > div {
 body#assignment-1 > div main > div {
   max-height: 400px;
   overflow: hidden;
-  margin-bottom: 1em;
 }
 body#assignment-1 > div main > div img {
   position: relative;
