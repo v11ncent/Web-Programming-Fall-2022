@@ -248,6 +248,7 @@ body#assignment-1 .content table thead {
 }
 body#assignment-1 .content table td {
   border: 1px solid black;
+  padding: 0.5em;
 }
 
 /*# sourceMappingURL=main.css.map */
