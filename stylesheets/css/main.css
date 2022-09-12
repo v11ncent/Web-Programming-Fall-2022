@@ -196,11 +196,12 @@ body#assignment-1 > div {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   max-width: 60%;
 }
-body#assignment-1 > div main > div {
+body#assignment-1 > div main > div:first-of-type {
   max-height: 400px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-body#assignment-1 > div main > div img {
+body#assignment-1 > div main > div:first-of-type img {
   position: relative;
   bottom: 10vw;
 }
@@ -239,6 +240,9 @@ body#assignment-1 .content ul li {
 }
 body#assignment-1 .content figure {
   padding: 1em 0;
+}
+body#assignment-1 .content figure img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 body#assignment-1 .content figure figcaption {
   margin-top: 1em;
