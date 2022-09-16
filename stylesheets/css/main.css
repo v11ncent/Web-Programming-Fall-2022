@@ -199,6 +199,9 @@ body#assignment-1 > div {
 body#assignment-1 > div img {
   filter: brightness(0.9);
 }
+body#assignment-1 > div p {
+  opacity: 0.8;
+}
 body#assignment-1 > div main > div:first-of-type {
   max-height: 400px;
   overflow: hidden;
@@ -237,9 +240,6 @@ body#assignment-1 .content a i {
 body#assignment-1 .content a span {
   text-decoration: underline;
 }
-body#assignment-1 .content p {
-  opacity: 0.8;
-}
 body#assignment-1 .content ul {
   list-style: "🐈";
   margin-left: 1em;
@@ -256,7 +256,7 @@ body#assignment-1 .content figure img {
 body#assignment-1 .content figure figcaption {
   margin-top: 1em;
   font-style: italic;
-  opacity: 0.7;
+  opacity: 0.65;
   text-align: center;
 }
 body#assignment-1 .content table {
@@ -269,6 +269,55 @@ body#assignment-1 .content table thead {
 body#assignment-1 .content table td {
   border: 1px solid black;
   padding: 0.5em;
+}
+
+body#assignment-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lexend", sans-serif;
+}
+body#assignment-2 > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "left-pane content content content right-pane";
+  height: 100%;
+}
+body#assignment-2 > div .content, body#assignment-2 > div .left-pane, body#assignment-2 > div .right-pane {
+  padding: 3em;
+}
+body#assignment-2 > div .content {
+  grid-area: "content";
+  display: flex;
+  justify-content: center;
+}
+body#assignment-2 > div .left-pane {
+  grid-area: "left-pane";
+  border-right: 1px solid #e4e4e4;
+}
+body#assignment-2 > div .right-pane {
+  grid-area: "right-pane";
+  border-left: 1px solid #e4e4e4;
+}
+body#assignment-2 > div main, body#assignment-2 > div section {
+  margin-bottom: 1.5em;
+}
+body#assignment-2 > div h1 {
+  line-height: 1;
+}
+body#assignment-2 > div h1, body#assignment-2 > div h2 {
+  margin-bottom: 0.5em;
+}
+body#assignment-2 > div ul {
+  list-style-type: none;
+}
+body#assignment-2 > div p {
+  opacity: 0.7;
+  max-width: 75ch;
+}
+body#assignment-2 > div a {
+  text-decoration: underline;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
