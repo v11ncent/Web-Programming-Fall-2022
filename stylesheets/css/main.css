@@ -216,6 +216,7 @@ body#assignment-2 {
   justify-content: center;
   font-family: "Lexend", sans-serif;
   line-height: 1.75;
+  margin: 0;
 }
 body#assignment-2 > .grid-container {
   display: grid;
@@ -223,6 +224,7 @@ body#assignment-2 > .grid-container {
   grid-template-areas: "left-pane content content content right-pane";
   margin-top: 0;
   margin-bottom: auto;
+  border: 1px solid black;
 }
 body#assignment-2 > .grid-container .content .grid-padding,
 body#assignment-2 > .grid-container .right-pane .grid-padding {
@@ -240,11 +242,15 @@ body#assignment-2 > .grid-container .left-pane {
   align-self: start;
   position: sticky;
   top: 0;
+}
+body#assignment-2 > .grid-container .left-pane ul, body#assignment-2 > .grid-container .left-pane li {
+  margin: 0;
   padding: 0;
 }
 body#assignment-2 > .grid-container .left-pane ul {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 body#assignment-2 > .grid-container .left-pane ul li {
   margin: 2em;
