@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/css/main.css">
+    <script src="https://kit.fontawesome.com/5f0726adb4.js" crossorigin="anonymous"></script>
     <title>Assignment 2</title>
 </head>
 <body id="assignment-2">
@@ -15,16 +16,13 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="#">Anchor 1</a>
+                                <a href="#"><i class="fa-solid fa-house"></i></a>
                             </li>
                             <li>
-                                <a href="#">Anchor 1</a>
+                                <a href="#"><i class="fa-solid fa-print"></i></a>
                             </li>
                             <li>
-                                <a href="#">Anchor 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Anchor 1</a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                             </li>
                         </ul>
                     </nav>
@@ -34,7 +32,7 @@
         <div class="content">
             <div class="grid-padding">
                 <main>
-                    <h1>Learning HTML: The Basics</h1>
+                    <h1>Learning <strong>HTML</strong>: The Basics</h1>
                     <p>
                         In this article, you will be learning about x, y, and z.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias similique 
@@ -44,32 +42,36 @@
                         eos incidunt, ad possimus atque error voluptatibus velit numquam pariatur.
                     </p>
                 </main>
-                <section>
-                    <h2>Section 2</h2>
+                <section id="spans">
+                    <div class="section-title">
+                        <h2>Spans <a href="#spans">#</a></h2>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
+                        The <code class="language-html">span</code> element is a generic inline 
+                        container for phrasing content, which does not inherently 
+                        represent anything. It can be used to group elements for 
+                        styling purposes (using the class or id attributes), or 
+                        because they share attribute values, such as lang. It 
+                        should be used only when no other semantic element is
+                        appropriate. <code class="language-html">span</code> is very much like a 
+                        <code class="language-html">div</code> element, but 
+                        <code class="language-html">div</code> is a 
+                        block-level element whereas a <code class="language-html">span</code> is 
+                        an inline element.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
-                    </p>
+                    <p>Here is an example of the <code class="language-html">span</code> element.</p>
+                    <div class="code-example">
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;div&gt;
+                                    &lt;p&gt;
+                                        This is a paragraph inside a div.
+                                    &lt;p&gt;
+                                &lt;div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">Read more</a>
                 </section>
                 <section>
                     <h2>Section 3</h2>
@@ -114,7 +116,7 @@
         </div>
         <div class="right-pane">
             <div class="grid-padding">
-                <section>
+                <aside>
                     <h3>About the author</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur 
@@ -123,9 +125,11 @@
                         modi ullam. Ipsum, aliquid quam? Vel labore fugiat 
                         officiis molestiae nisi!
                     </p>
-                </section>
+                    <a href="https://vince1444.github.io/">Author Website</a>
+                </aside>
             </div>
         </div>
     </div>
+    <script src="javascript/prism.js"></script>
 </body>
 </html>

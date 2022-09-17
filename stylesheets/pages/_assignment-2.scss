@@ -1,88 +1,140 @@
-body#assignment-2 {
+body#assignment-2 { // I need to clean this up
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: $font--family-lexend;
+    line-height: 1.75;
 
-    & > div.grid-container {
+    & > .grid-container {
         display: grid;
-        grid-template-columns: 0.5fr 3fr 1.5fr;
+        grid-template-columns: auto 3fr 0.75fr;
         grid-template-areas: "left-pane content content content right-pane";
-        height: fit-content;
-        width: 100%;
         margin-top: 0;
         margin-bottom: auto;
         
-        .grid-padding {
+        .content .grid-padding,
+        .right-pane .grid-padding {
             padding: 3em;
         }
         
-
         .content {
             grid-area: "content";
             display: flex;
             justify-content: center;
+            border-left: 1px solid rgb(228, 228, 228);
+            border-right: 1px solid rgb(228, 228, 228);
+
+            // div > * > *:not(h1, h2) {
+            //     margin-bottom: 1.5em;
+            // }
         }
 
         .left-pane {
+            // Great article:
+            // https://ishadeed.com/article/position-sticky-css-grid/
             grid-area: "left-pane";
-            border-right: 1px solid rgb(228, 228, 228);
-            border: 1px solid blue;
+            align-self: start;
+            position: sticky;
+            top: 0;
+            padding: 0;
 
-            div {
-                border: 1px solid red;
-                
-                section {
-                    border: 3px solid yellow;
-                    width: inherit;
-                   
+            ul {
+                display: flex;
+                flex-direction: column;
+    
+                li {
+                    margin: 2em;
+                    font-size: 1.25em;
+                    
+                    i {
+                        color: black;
+                        opacity: 0.7;
+                    }
                 }
             }
         }
 
         .right-pane {
             grid-area: "right-pane";
-            border-left: 1px solid rgb(228, 228, 228);
-            
-            h3 {
-                text-transform: uppercase;
-                font-size: 1em;
-                color: rgb(50, 72, 237);
+            align-self: start;
+            position: sticky;
+            top: 0;
+
+            a {
+                background-color: $assignment2--brand-color;
+                color: white;
+                text-decoration: none;
+                border-radius: 2em;
+                padding: 1em 2em;
+                font-weight: bold;
             }
 
+            p {
+                margin-bottom: 2em; // This is lazy, I need to put it on the <a>
+            }
         }
-        
-        .left-pane > div,
-        .right-pane > div {
-            position: fixed;
-            height: 100%;
-        }
+    }
 
+    code {
+        padding: 0.25em;
+    }
 
-        main, section {
-            margin-bottom: 1.5em;
-        }
+    section > *:not(.section--title) {
+        margin-bottom: 1em;
+    }
 
-        h1 {
-            line-height: 1;
-        }
+    .section-title a {
+        text-decoration: none;
+        color: black;
+        opacity: 0.3;
+        margin-left: 0.25em;
+        font-weight: 400;
+        transition: all 0.2s ease-out;
 
-        h1, h2 {
-            margin-bottom: 0.5em;
+        &:hover {
+            opacity: 1;
         }
+    }
 
-        ul {
-            list-style-type: none;
-        }
+    p {
+        // If you set opacity, then the child elements can only have the 
+        // maximum opacity set by the parent, hence why I'm using rgba() here
+        color: rgba(0, 0, 0, 0.8); 
+        max-width: 75ch;
+    }
 
-        p {
-            opacity: 0.7;
-            max-width: 75ch;
-        }
+    pre {
+        // background-color: $assignment2--code-background-color;
+        border-radius: 0.5em;
+    }
 
-        a {
-            text-decoration: underline;
-            color: black;
-        }
+    h1, strong {
+        font-weight: 700;
+    }
+
+    main, section {
+        margin-bottom: 1.5em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1;
+    }
+
+    h1 {
+        line-height: 1;
+    }
+
+    h1, h2 {
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 1em;
+        color: $assignment2--brand-color;
+    }
+
+    ul {
+        list-style-type: none;
     }
 }

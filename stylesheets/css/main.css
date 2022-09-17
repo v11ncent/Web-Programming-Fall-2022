@@ -12,75 +12,14 @@
  * Shadows
  */
 /*
+ * Assignment 2 specific
+ */
+/*
  * Index-specific
  */
 img {
   height: auto;
   max-width: 100%;
-}
-
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/*
-  2. Remove default margin
-*/
-* {
-  margin: 0;
-}
-
-/*
-  3. Allow percentage-based heights in the application
-*/
-html, body {
-  height: 100%;
-}
-
-/*
-  Typographic tweaks!
-  4. Add accessible line-height
-  5. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-/*
-  6. Improve media defaults
-*/
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-/*
-  7. Remove built-in form typography styles
-*/
-input, button, textarea, select {
-  font: inherit;
-}
-
-/*
-  8. Avoid text overflows
-*/
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-/*
-  9. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
-}
-
-ul {
-  padding: 0;
 }
 
 .card {
@@ -276,69 +215,307 @@ body#assignment-2 {
   align-items: center;
   justify-content: center;
   font-family: "Lexend", sans-serif;
+  line-height: 1.75;
 }
-body#assignment-2 > div.grid-container {
+body#assignment-2 > .grid-container {
   display: grid;
-  grid-template-columns: 0.5fr 3fr 1.5fr;
+  grid-template-columns: auto 3fr 0.75fr;
   grid-template-areas: "left-pane content content content right-pane";
-  height: fit-content;
-  width: 100%;
   margin-top: 0;
   margin-bottom: auto;
 }
-body#assignment-2 > div.grid-container .grid-padding {
+body#assignment-2 > .grid-container .content .grid-padding,
+body#assignment-2 > .grid-container .right-pane .grid-padding {
   padding: 3em;
 }
-body#assignment-2 > div.grid-container .content {
+body#assignment-2 > .grid-container .content {
   grid-area: "content";
   display: flex;
   justify-content: center;
-}
-body#assignment-2 > div.grid-container .left-pane {
-  grid-area: "left-pane";
-  border-right: 1px solid #e4e4e4;
-  border: 1px solid blue;
-}
-body#assignment-2 > div.grid-container .left-pane div {
-  border: 1px solid red;
-}
-body#assignment-2 > div.grid-container .left-pane div section {
-  border: 3px solid yellow;
-  width: inherit;
-}
-body#assignment-2 > div.grid-container .right-pane {
-  grid-area: "right-pane";
   border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
 }
-body#assignment-2 > div.grid-container .right-pane h3 {
+body#assignment-2 > .grid-container .left-pane {
+  grid-area: "left-pane";
+  align-self: start;
+  position: sticky;
+  top: 0;
+  padding: 0;
+}
+body#assignment-2 > .grid-container .left-pane ul {
+  display: flex;
+  flex-direction: column;
+}
+body#assignment-2 > .grid-container .left-pane ul li {
+  margin: 2em;
+  font-size: 1.25em;
+}
+body#assignment-2 > .grid-container .left-pane ul li i {
+  color: black;
+  opacity: 0.7;
+}
+body#assignment-2 > .grid-container .right-pane {
+  grid-area: "right-pane";
+  align-self: start;
+  position: sticky;
+  top: 0;
+}
+body#assignment-2 > .grid-container .right-pane a {
+  background-color: #3248ed;
+  color: white;
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 1em 2em;
+  font-weight: bold;
+}
+body#assignment-2 > .grid-container .right-pane p {
+  margin-bottom: 2em;
+}
+body#assignment-2 code {
+  padding: 0.25em;
+}
+body#assignment-2 section > *:not(.section--title) {
+  margin-bottom: 1em;
+}
+body#assignment-2 .section-title a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.3;
+  margin-left: 0.25em;
+  font-weight: 400;
+  transition: all 0.2s ease-out;
+}
+body#assignment-2 .section-title a:hover {
+  opacity: 1;
+}
+body#assignment-2 p {
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 75ch;
+}
+body#assignment-2 pre {
+  border-radius: 0.5em;
+}
+body#assignment-2 h1, body#assignment-2 strong {
+  font-weight: 700;
+}
+body#assignment-2 main, body#assignment-2 section {
+  margin-bottom: 1.5em;
+}
+body#assignment-2 h1, body#assignment-2 h2, body#assignment-2 h3, body#assignment-2 h4, body#assignment-2 h5, body#assignment-2 h6 {
+  line-height: 1;
+}
+body#assignment-2 h1 {
+  line-height: 1;
+}
+body#assignment-2 h1, body#assignment-2 h2 {
+  margin-bottom: 0.5em;
+}
+body#assignment-2 h3 {
   text-transform: uppercase;
   font-size: 1em;
   color: #3248ed;
 }
-body#assignment-2 > div.grid-container .left-pane > div,
-body#assignment-2 > div.grid-container .right-pane > div {
-  position: fixed;
-  height: 100%;
-}
-body#assignment-2 > div.grid-container main, body#assignment-2 > div.grid-container section {
-  margin-bottom: 1.5em;
-}
-body#assignment-2 > div.grid-container h1 {
-  line-height: 1;
-}
-body#assignment-2 > div.grid-container h1, body#assignment-2 > div.grid-container h2 {
-  margin-bottom: 0.5em;
-}
-body#assignment-2 > div.grid-container ul {
+body#assignment-2 ul {
   list-style-type: none;
 }
-body#assignment-2 > div.grid-container p {
-  opacity: 0.7;
-  max-width: 75ch;
+
+/* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript&plugins=line-numbers+highlight-keywords+normalize-whitespace+toolbar */
+code[class*=language-], pre[class*=language-] {
+  color: #000;
+  background: 0 0;
+  text-shadow: 0 1px #fff;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
-body#assignment-2 > div.grid-container a {
-  text-decoration: underline;
-  color: black;
+
+code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+code[class*=language-] ::selection, code[class*=language-]::selection, pre[class*=language-] ::selection, pre[class*=language-]::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media print {
+  code[class*=language-], pre[class*=language-] {
+    text-shadow: none;
+  }
+}
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*=language-], pre[class*=language-] {
+  background: #f5f2f0;
+}
+
+:not(pre) > code[class*=language-] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+  color: #708090;
+}
+
+.token.punctuation {
+  color: #999;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.boolean, .token.constant, .token.deleted, .token.number, .token.property, .token.symbol, .token.tag {
+  color: #905;
+}
+
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+  color: #690;
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+  color: #9a6e3a;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule, .token.attr-value, .token.keyword {
+  color: #07a;
+}
+
+.token.class-name, .token.function {
+  color: #dd4a68;
+}
+
+.token.important, .token.regex, .token.variable {
+  color: #e90;
+}
+
+.token.bold, .token.important {
+  font-weight: 700;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre[class*=language-].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre[class*=language-].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  z-index: 10;
+  top: 0.3em;
+  right: 0.2em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+  cursor: pointer;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a, div.code-toolbar > .toolbar > .toolbar-item > button, div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: #bbb;
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.2);
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a:focus, div.code-toolbar > .toolbar > .toolbar-item > a:hover, div.code-toolbar > .toolbar > .toolbar-item > button:focus, div.code-toolbar > .toolbar > .toolbar-item > button:hover, div.code-toolbar > .toolbar > .toolbar-item > span:focus, div.code-toolbar > .toolbar > .toolbar-item > span:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
