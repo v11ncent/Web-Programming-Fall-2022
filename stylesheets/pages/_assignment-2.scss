@@ -1,3 +1,7 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
 body#assignment-2 { // I need to clean this up
     display: flex;
     align-items: center;
@@ -12,7 +16,6 @@ body#assignment-2 { // I need to clean this up
         grid-template-areas: "left-pane content content content right-pane";
         margin-top: 0;
         margin-bottom: auto;
-        border: 1px solid black;
         
         
         .content .grid-padding,
@@ -78,10 +81,6 @@ body#assignment-2 { // I need to clean this up
                 margin-bottom: 2em; // This is lazy, I need to put it on the <a>
             }
         }
-    }
-
-    code {
-        padding: 0.25em;
     }
 
     section > *:not(.section--title) {
