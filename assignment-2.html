@@ -16,7 +16,7 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="#"><i class="fa-solid fa-house"></i></a>
+                                <a href="index.html"><i class="fa-solid fa-house"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa-solid fa-print"></i></a>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="content">
-            <div class="grid-padding">
+            <div class="grid-padding grid--content-max-width">
                 <main>
                     <h1>Learning <strong>HTML</strong>: The Basics</h1>
                     <p>
@@ -47,68 +47,86 @@
                         <h2>Spans <a href="#spans">#</a></h2>
                     </div>
                     <p>
-                        The <code class="language-html">span</code> element is a generic inline 
+                        The <code class="language-html">&lt;span&gt;</code> element is a generic inline 
                         container for phrasing content, which does not inherently 
                         represent anything. It can be used to group elements for 
                         styling purposes (using the class or id attributes), or 
                         because they share attribute values, such as lang. It 
                         should be used only when no other semantic element is
-                        appropriate. <code class="language-html">span</code> is very much like a 
-                        <code class="language-html">div</code> element, but 
-                        <code class="language-html">div</code> is a 
-                        block-level element whereas a <code class="language-html">span</code> is 
+                        appropriate. <code class="language-html">&lt;span&gt;</code> is very much like a 
+                        <code class="language-html">&lt;div&gt;</code> element, but 
+                        <code class="language-html">&lt;div&gt;</code> is a 
+                        block-level element whereas a <code class="language-html">&lt;span&gt;</code> is 
                         an inline element.
                     </p>
-                    <p>Here is an example of the <code class="language-html">span</code> element.</p>
                     <div class="code-example">
+                        <p>Here is an example of the <code class="language-html">&lt;span&gt;</code> element:</p>
                         <pre class="line-numbers">
                             <code class="language-html">
                                 &lt;p&gt;
-                                    This is &lt;span&gt;hey look! a span&lt;span&gt; a paragraph.
-                                &lt;p&gt;
+                                    This is &lt;span&gt;hey look! a span&lt;/span&gt; a paragraph.
+                                &lt;/p&gt;
                             </code>
                         </pre>
                     </div>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">Read more</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="external-link">Read more</a>
                 </section>
-                <section>
-                    <h2>Section 3</h2>
+                <section id="anchors">
+                    <div class="section-title">
+                        <h2>Anchors <a href="#anchors">#</a></h2>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
+                        The <code class="language-html">&lt;a&gt;</code> element (known as an anchor
+                        or a link), with its href attribute, creates a hyperlink to web pages, files,
+                        email addresses, locations in the same page, or anything else a URL can address.
+                        Content within each <code class="language-html">&lt;a&gt;</code> should indicate
+                        the link's destination. If the href attribute is present, pressing the enter key
+                        while focused on the <code class="language-html">&lt;a&gt;</code> element will
+                        activate it.
                     </p>
+                    <div class="code-example">
+                        <p>
+                            Here's an example of a <code class="language-html">&lt;nav&gt;</code> element 
+                            with multiple <code class="language-html">&lt;a&gt;</code> tags:
+                        </p>
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;nav&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href="https://www.example-website.com" target="_blank"&gt;Link to an example website&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="https://www.example-website-2.com" target="_blank"&gt;Link to another example website&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="external-link">Read more</a>
+                </section>
+                <section id="comments">
+                    <div class="section-title">
+                        <h2>Comments <a href="#comments">#</a></h2>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
+                        Comments are notes that you can leave inside your html. To write a
+                        comment, you use the <code class="language-plaintext">&lt;--! --&gt;</code> tags.
+                        This syntax tells the browser than anything inside the tags are comments and
+                        should not be rendered as valid code.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                        consequatur, culpa, quis accusantium aliquid, voluptatem adipisci est 
-                        nisi obcaecati commodi dignissimos! Eaque enim blanditiis suscipit aut 
-                        ullam reprehenderit delectus eveniet.
-                    </p>
+                    <div class="code-example">
+                        <p>Check out this comment example:</p>
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;div class="container-flex"&gt;
+                                    &lt;section class="section-javascript"&gt;
+                                        <code class="language-plaintext"><--! Change to a better title later --></code>
+                                        &lt;h2&gt;Javascript Basics&lt;h2&gt;
+                                        &lt;p&gt;Despite what people may think, JavaScript is quite easy to learn!&lt;p&gt;
+                                    &lt;section&gt;
+                                &lt;div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="external-link">Read more</a>
                 </section>
             </div>
         </div>
@@ -117,13 +135,10 @@
                 <aside>
                     <h3>About the author</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Officia, veniam. Itaque, aliquam! 
-                        Neque quia exercitationem numquam dolorum esse nam 
-                        modi ullam. Ipsum, aliquid quam? Vel labore fugiat 
-                        officiis molestiae nisi!
+                        I'm a web developer and designer. In my free time, I like to
+                        make mock websites to practice my development and design skills.
                     </p>
-                    <a href="https://vince1444.github.io/">Author Website</a>
+                    <a href="https://vince1444.github.io/" class="external-link">Author Website</a>
                 </aside>
             </div>
         </div>

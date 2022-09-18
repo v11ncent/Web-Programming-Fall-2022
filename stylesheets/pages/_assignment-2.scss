@@ -16,6 +16,7 @@ body#assignment-2 { // I need to clean this up
         grid-template-areas: "left-pane content content content right-pane";
         margin-top: 0;
         margin-bottom: auto;
+        width: 100%;
         
         
         .content .grid-padding,
@@ -29,6 +30,33 @@ body#assignment-2 { // I need to clean this up
             justify-content: center;
             border-left: 1px solid rgb(228, 228, 228);
             border-right: 1px solid rgb(228, 228, 228);
+
+            div.grid--content-max-width {
+                max-width: 55%;
+                // box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 5px 0px;
+            }
+
+            section {
+                margin: 3.5em 0;
+            }
+
+            section > * {
+                margin-bottom: 1.25em;
+            }
+
+        
+            .section-title a {
+                text-decoration: none;
+                color: black;
+                opacity: 0.3;
+                margin-left: 0.25em;
+                font-weight: 400;
+                transition: all 0.2s ease-out;
+        
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
 
 
@@ -68,35 +96,19 @@ body#assignment-2 { // I need to clean this up
             position: sticky;
             top: 0;
 
-            a {
-                background-color: $assignment2--brand-color;
-                color: white;
-                text-decoration: none;
-                border-radius: 2em;
-                padding: 1em 2em;
-                font-weight: bold;
-            }
+            aside {
+                display: flex;
+                flex-direction: column;
 
-            p {
-                margin-bottom: 2em; // This is lazy, I need to put it on the <a>
+                & > * {
+                    margin: 0.5em 0;
+                }
             }
         }
-    }
 
-    section > *:not(.section--title) {
-        margin-bottom: 1em;
-    }
-
-    .section-title a {
-        text-decoration: none;
-        color: black;
-        opacity: 0.3;
-        margin-left: 0.25em;
-        font-weight: 400;
-        transition: all 0.2s ease-out;
-
-        &:hover {
-            opacity: 1;
+        a.external-link {
+            color: $assignment2--brand-color;
+            text-decoration: underline;
         }
     }
 
@@ -104,12 +116,11 @@ body#assignment-2 { // I need to clean this up
         // If you set opacity, then the child elements can only have the 
         // maximum opacity set by the parent, hence why I'm using rgba() here
         color: rgba(0, 0, 0, 0.8); 
-        max-width: 75ch;
+        max-width: 80ch;
     }
 
     pre {
-        // background-color: $assignment2--code-background-color;
-        border-radius: 0.5em;
+        border-radius: 0.25em;
     }
 
     h1, strong {
