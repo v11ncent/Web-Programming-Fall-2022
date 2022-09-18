@@ -71,6 +71,33 @@
                     </div>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="external-link">Read more</a>
                 </section>
+                <section id="divs">
+                    <div class="section-title">
+                        <h2>Divs <a href="#divs">#</a></h2>
+                    </div>
+                    <p>
+                        The <code class="language-html">&lt;div&gt;</code> element is the generic
+                        container for flow ocntent. It has no effect on the content or the layout until
+                        styled in some way using CSS. In my opinion, it should be used as a last
+                        resort when no other semantic elements are available or fit the situation.
+                    </p>
+                    <div class="code-example">
+                        <p>
+                            Here's an example of a <code class="language-html">&lt;div&gt;</code> element:
+                        </p>
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;div&gt;
+                                    &lt;p&gt;We Have No&lt;/p&gt;
+                                    &lt;div&gt;
+                                        &lt;p&gt;Effect on SEO&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="external-link">Read more</a>
+                </section>
                 <section id="anchors">
                     <div class="section-title">
                         <h2>Anchors <a href="#anchors">#</a></h2>
@@ -118,7 +145,7 @@
                             <code class="language-html">
                                 &lt;div class="container-flex"&gt;
                                     &lt;section class="section-javascript"&gt;
-                                        <code class="language-plaintext"><--! Change to a better title later --></code>
+                                        <code class="language-plaintext">&lt;--! Change to a better title later --&gt;</code>
                                         &lt;h2&gt;Javascript Basics&lt;h2&gt;
                                         &lt;p&gt;Despite what people may think, JavaScript is quite easy to learn!&lt;p&gt;
                                     &lt;section&gt;
@@ -127,6 +154,77 @@
                         </pre>
                     </div>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="external-link">Read more</a>
+                </section>
+                <section id="nested-lists">
+                    <div class="section-title">
+                        <h2>Nested Lists <a href="#nested-lists">#</a></h2>
+                    </div>
+                    <p>
+                        There are two kind of lists: the unordered and ordered lists. The unordered
+                        list is represented with the <code class="language-html">&lt;ul&gt;</code>
+                        and the ordered list is represented with the <code class="language-html">&lt;ol&gt;</code>
+                        tag. The <code class="language-html">&lt;li&gt;</code> tag represents items in these
+                        lists. You can nest lists inside of each other to create to-do lists & navigational
+                        menus.
+                    </p>
+                    <div class="code-example">
+                        <p>Check out this comment example:</p>
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;ul&gt;
+                                    &lt;li&gt;Coffee&lt;/li&gt;
+                                    &lt;li&gt;Tea
+                                        &lt;ol&gt;
+                                            &lt;li&gt;Black Tea&lt;/li&gt;
+                                            &lt;li&gt;Black Tea&lt;/li&gt;
+                                        &lt;/ol&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;Milk&lt;/ol&gt;
+                                &lt;/ul&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <ul class="link-list">
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" class="external-link">
+                                Read more about ul
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" class="external-link">
+                                Read more about ol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" class="external-link">
+                                Read more about li
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section id="input-forms">
+                    <div class="section-title">
+                        <h2>Input Forms <a href="#input-forms">#</a></h2>
+                    </div>
+                    <p>
+                        The <code class="language-html">&lt;input&gt;</code> is used to create
+                        interactive controls for web-based forms in order toaccept data from the user;
+                        a wide variety of types of input data and control widgets are available,
+                        depending on the device and user agent. The <code class="language-html">&lt;input&gt;</code>
+                        element is one of the most powerful and complex in all of HTML due to the
+                        sheer number of combinations of input types and attributes.
+                    </p>
+                    <div class="code-example">
+                        <p>See how a simple input form is set up in HTML:</p>
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;form&gt;
+                                    &lt;label for="name"&gt;Enter Your Name&lt;/label&gt;&lt;br&gt;
+                                    &lt;input type="text" id="name" name="name"&gt;
+                                &lt;/form&gt;
+                            </code>
+                        </pre>
+                    </div>
                 </section>
             </div>
         </div>

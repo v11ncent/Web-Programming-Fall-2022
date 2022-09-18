@@ -31,11 +31,6 @@ body#assignment-2 { // I need to clean this up
             border-left: 1px solid rgb(228, 228, 228);
             border-right: 1px solid rgb(228, 228, 228);
 
-            div.grid--content-max-width {
-                max-width: 55%;
-                // box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 5px 0px;
-            }
-
             section {
                 margin: 3.5em 0;
             }
@@ -110,13 +105,22 @@ body#assignment-2 { // I need to clean this up
             color: $assignment2--brand-color;
             text-decoration: underline;
         }
+
+        ul.link-list {
+            list-style-type: decimal;
+            margin: auto;
+            padding-left: 1em;
+        }
+    }
+
+    p, pre {
+        max-width: 80ch;
     }
 
     p {
         // If you set opacity, then the child elements can only have the 
         // maximum opacity set by the parent, hence why I'm using rgba() here
         color: rgba(0, 0, 0, 0.8); 
-        max-width: 80ch;
     }
 
     pre {
@@ -149,7 +153,7 @@ body#assignment-2 { // I need to clean this up
         color: $assignment2--brand-color;
     }
 
-    ul {
+    ul:not(.link-list) {
         list-style-type: none;
     }
 }
