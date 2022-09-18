@@ -120,8 +120,16 @@
                             <code class="language-html">
                                 &lt;nav&gt;
                                     &lt;ul&gt;
-                                        &lt;li&gt;&lt;a href="https://www.example-website.com" target="_blank"&gt;Link to an example website&lt;/a&gt;&lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="https://www.example-website-2.com" target="_blank"&gt;Link to another example website&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;a href="https://www.example-website.com" target="_blank"&gt;
+                                                Link to an example website
+                                            &lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;a href="https://www.example-website-2.com" target="_blank"&gt;
+                                                Link to another example website
+                                            &lt;/a&gt;
+                                        &lt;/li&gt;
                                     &lt;/ul&gt;
                                 &lt;/nav&gt;
                             </code>
@@ -147,7 +155,10 @@
                                     &lt;section class="section-javascript"&gt;
                                         <code class="language-plaintext">&lt;--! Change to a better title later --&gt;</code>
                                         &lt;h2&gt;Javascript Basics&lt;h2&gt;
-                                        &lt;p&gt;Despite what people may think, JavaScript is quite easy to learn!&lt;p&gt;
+                                        &lt;p&gt;
+                                            Despite what people may think, JavaScript 
+                                            is quite easy to learn!
+                                        &lt;p&gt;
                                     &lt;section&gt;
                                 &lt;div&gt;
                             </code>
@@ -225,6 +236,81 @@
                             </code>
                         </pre>
                     </div>
+                </section>
+                <section id="dropdowns">
+                    <div class="section-title">
+                        <h2>Dropdowns <a href="#dropdowns">#</a></h2>
+                    </div>
+                    <p>
+                        The <code class="language-html">&lt;select&gt;</code> element represents a
+                        control that provides a menu of options. A 
+                        <code class="language-html">&lt;select&gt;</code> element can have 
+                        <code class="language-html">id</code> and <code class="language-html">name</code> 
+                        attributes. The <code class="language-html">id</code> attribute is to associate
+                        a <code class="language-html">&lt;select&gt;</code> with a
+                        <code class="language-html">&lt;label&gt;</code> for accessibility purposes.
+                        The <code class="language-html">name</code> attribute represents the name of the
+                        associated data point submitted to the server. Each menu option is defined by an
+                        <code class="language-html">&lt;option&gt;</code> element, and there
+                        can be multiple such elements.
+                    </p>
+                    <div class="code-example">
+                        <p>
+                            Below you can see an example of the 
+                            <code class="language-html">&lt;select&gt;</code> element: 
+                        </p>
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;label for="pet-select"&gt;Choose a pet&lt;/label&gt;
+                                &lt;select name="pets" id="pet-select"&gt;
+                                    &lt;option value=""&gt;--Please choose an option--&lt;/option&gt;
+                                    &lt;option value="cat"&gt;dog&lt;Cat&lt;/option&gt;
+                                    &lt;option for="dog"&gt;Dog&lt;/option&gt;
+                                &lt;/select&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" class="external-link">Read more</a>
+                </section>
+                <section id="radio">
+                    <div class="section-title">
+                        <h2>Radio <a href="#radio">#</a></h2>
+                    </div>
+                    <p>
+                        Radio buttons are used in <code class="language-html">&lt;input&gt;</code>
+                        forms where a user should select only one option. To group related radio buttons,
+                        you would use the <code class="language-html">&lt;fieldset&gt;</code> tag.
+                        To give the <code class="language-html">&lt;fieldset&gt;</code> a title, a
+                        <code class="language-html">&lt;legend&gt;</code> element is required.
+                        The <code class="language-html">checked</code> attribute selects its radio button.
+                    </p>
+                    <div class="code-example">
+                        <p>
+                            Consider the example below:
+                        </p>
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;form&gt;
+                                    &lt;fieldset&gt;
+                                        &lt;legend&gt;Select your favorite food&lt;/legend&gt;
+                                            &lt;div&gt;
+                                                &lt;input type="radio" id="hamburger" name="food" value="hamburger" checked&gt;
+                                                &lt;label for="hamburger"&gt;Hamburger&lt;/label"&gt;
+                                            &lt;/div&gt;
+                                            &lt;div&gt;
+                                                &lt;input type="radio" id="pasta" name="food" value="pasta"&gt;
+                                                &lt;label for="pasta"&gt;Pasta&lt;/label"&gt;
+                                            &lt;/div&gt;
+                                            &lt;div&gt;
+                                                &lt;input type="radio" id="pizza" name="food" value="pizza" checked&gt;
+                                                &lt;label for="pizza"&gt;Pizza&lt;/label"&gt;
+                                            &lt;/div&gt;
+                                    &lt;/fieldset&gt;
+                                &lt;/form&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio" class="external-link">Read more</a>
                 </section>
             </div>
         </div>

@@ -288,8 +288,8 @@ body#assignment-2 {
 }
 body#assignment-2 > .grid-container {
   display: grid;
-  grid-template-columns: auto 3fr 0.75fr;
-  grid-template-areas: "left-pane content content content right-pane";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "left-pane content right-pane";
   margin-top: 0;
   margin-bottom: auto;
   width: 100%;
@@ -304,6 +304,7 @@ body#assignment-2 > .grid-container .content {
   justify-content: center;
   border-left: 1px solid #e4e4e4;
   border-right: 1px solid #e4e4e4;
+  width: 100%;
 }
 body#assignment-2 > .grid-container .content section {
   margin: 3.5em 0;
@@ -366,6 +367,20 @@ body#assignment-2 > .grid-container ul.link-list {
   list-style-type: decimal;
   margin: auto;
   padding-left: 1em;
+}
+@media (max-width: 1200px) {
+  body#assignment-2 > .grid-container {
+    grid-template-columns: auto;
+    grid-template-areas: "content";
+  }
+}
+@media (max-width: 1200px) {
+  body#assignment-2 > .grid-container .right-pane, body#assignment-2 > .grid-container .left-pane {
+    display: none;
+  }
+}
+body#assignment-2 .content, body#assignment-2 .content > .grid-padding {
+  overflow: auto;
 }
 body#assignment-2 p, body#assignment-2 pre {
   max-width: 80ch;

@@ -12,13 +12,12 @@ body#assignment-2 { // I need to clean this up
 
     & > .grid-container {
         display: grid;
-        grid-template-columns: auto 3fr 0.75fr;
-        grid-template-areas: "left-pane content content content right-pane";
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: "left-pane content right-pane";
         margin-top: 0;
         margin-bottom: auto;
         width: 100%;
-        
-        
+
         .content .grid-padding,
         .right-pane .grid-padding {
             padding: 3em;
@@ -30,6 +29,7 @@ body#assignment-2 { // I need to clean this up
             justify-content: center;
             border-left: 1px solid rgb(228, 228, 228);
             border-right: 1px solid rgb(228, 228, 228);
+            width: 100%;
 
             section {
                 margin: 3.5em 0;
@@ -38,7 +38,6 @@ body#assignment-2 { // I need to clean this up
             section > * {
                 margin-bottom: 1.25em;
             }
-
         
             .section-title a {
                 text-decoration: none;
@@ -111,6 +110,23 @@ body#assignment-2 { // I need to clean this up
             margin: auto;
             padding-left: 1em;
         }
+
+        // Breakpoints
+
+        @media (max-width: calc($breakpoint--tablet + 200px)) {
+            grid-template-columns: auto;
+            grid-template-areas: "content";
+        }
+
+        .right-pane, .left-pane {
+            @media (max-width: calc($breakpoint--tablet + 200px)) {
+                display: none;
+            }
+        }
+    }
+
+    .content, .content > .grid-padding {
+        overflow: auto; // fixes <pre> width issue on mobile
     }
 
     p, pre {
