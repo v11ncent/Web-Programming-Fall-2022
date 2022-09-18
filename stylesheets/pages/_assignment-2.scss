@@ -133,6 +133,10 @@ body#assignment-2 { // I need to clean this up
         max-width: 80ch;
     }
 
+    pre {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    }
+
     p {
         // If you set opacity, then the child elements can only have the 
         // maximum opacity set by the parent, hence why I'm using rgba() here

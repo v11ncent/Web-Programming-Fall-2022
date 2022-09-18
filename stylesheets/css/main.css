@@ -385,6 +385,9 @@ body#assignment-2 .content, body#assignment-2 .content > .grid-padding {
 body#assignment-2 p, body#assignment-2 pre {
   max-width: 80ch;
 }
+body#assignment-2 pre {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
 body#assignment-2 p {
   color: rgba(0, 0, 0, 0.8);
 }
