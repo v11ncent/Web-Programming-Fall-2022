@@ -288,7 +288,7 @@ body#assignment-2 {
 }
 body#assignment-2 > .grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr 1.25fr;
   grid-template-areas: "left-pane content right-pane";
   margin-top: 0;
   margin-bottom: auto;

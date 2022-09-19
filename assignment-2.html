@@ -223,10 +223,13 @@
                         a wide variety of types of input data and control widgets are available,
                         depending on the device and user agent. The <code class="language-html">&lt;input&gt;</code>
                         element is one of the most powerful and complex in all of HTML due to the
-                        sheer number of combinations of input types and attributes.
+                        sheer number of combinations of input types and attributes. Some types are:
+                        <code class="language-html">text</code>, <code class="language-html">password</code>,
+                        <code class="language-html">password</code>, <code class="language-html">color</code>, 
+                        and <code class="language-html">date</code>.
                     </p>
                     <div class="code-example">
-                        <p>See how a simple input form is set up in HTML:</p>
+                        <p>Here's how to set up a simple input form with input type <code class="language-html">text</code>:</p>
                         <pre class="line-numbers">
                             <code class="language-html">
                                 &lt;form&gt;
@@ -274,7 +277,7 @@
                 </section>
                 <section id="radio">
                     <div class="section-title">
-                        <h2>Radio <a href="#radio">#</a></h2>
+                        <h2>Radio Buttons <a href="#radio">#</a></h2>
                     </div>
                     <p>
                         Radio buttons are used in <code class="language-html">&lt;input&gt;</code>
@@ -311,6 +314,47 @@
                         </pre>
                     </div>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio" class="external-link">Read more</a>
+                </section>
+                <section id="checkboxes">
+                    <div class="section-title">
+                        <h2>Checkboxes <a href="#checkboxes">#</a></h2>
+                    </div>
+                    <p>
+                        <code class="language-html">&lt;input&gt;</code> elements of type
+                        <code class="language-html">checkbox</code> are rendered by default
+                        as boxes that are checked (ticked) when activated. The exact appearance
+                        depends upon the operating system configuration under which the browser
+                        is running. Generally, this is a square; however, it may have rounded
+                        corners. A checkbox allows you to select single values for submission
+                        in a form (or not).
+                    </p>
+                    <div class="code-example">
+                        <p>
+                            Consider the example below:
+                        </p>
+                        <pre class="line-numbers">
+                            <code class="language-html">
+                                &lt;form&gt;
+                                    &lt;fieldset&gt;
+                                        &lt;legend&gt;Check your favorite things about frontend development&lt;/legend&gt;
+                                            &lt;div&gt;
+                                                &lt;input type="checkbox" id="html" name="html" checked&gt;
+                                                &lt;label for="html"&gt;HTML&lt;/label"&gt;
+                                            &lt;/div&gt;
+                                            &lt;div&gt;
+                                                &lt;input type="checkbox" id="css" name="css"&gt;
+                                                &lt;label for="css"&gt;CSS&lt;/label"&gt;
+                                            &lt;/div&gt;
+                                            &lt;div&gt;
+                                                &lt;input type="checkbox" id="js" name="js"&gt;
+                                                &lt;label for="js"&gt;JavaScript&lt;/label"&gt;
+                                            &lt;/div&gt;
+                                    &lt;/fieldset&gt;
+                                &lt;/form&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox" class="external-link">Read more</a>
                 </section>
             </div>
         </div>
