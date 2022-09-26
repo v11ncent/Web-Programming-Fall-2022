@@ -2,7 +2,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-body#assignment-2 { // I need to clean this up
+body.article { // I need to clean this up
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,5 +175,12 @@ body#assignment-2 { // I need to clean this up
 
     ul:not(.link-list) {
         list-style-type: none;
+    }
+
+    .background-image {
+        background-image: url('../../media/78745131.jpg');
+        width: 100%;
+        height: 50em;
+        background-position: center;
     }
 }

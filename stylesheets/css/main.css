@@ -87,7 +87,7 @@ ul {
 }
 
 .card {
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgb(230, 230, 230);
   border-top: 3px solid blue;
   border-radius: 0.25em;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -141,7 +141,7 @@ body#index body {
 }
 body#index .header {
   text-align: center;
-  background-color: #191919;
+  background-color: rgb(25, 25, 25);
   color: white;
   width: 100%;
   padding: 5em;
@@ -264,10 +264,10 @@ body#assignment-1 .content figure figcaption {
 }
 body#assignment-1 .content table {
   border: 1px solid black;
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245);
 }
 body#assignment-1 .content table thead {
-  background-color: #bfbfbf;
+  background-color: rgb(191, 191, 191);
 }
 body#assignment-1 .content table td {
   border: 1px solid black;
@@ -278,7 +278,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
-body#assignment-2 {
+body.article {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,7 +286,7 @@ body#assignment-2 {
   line-height: 1.75;
   margin: 0;
 }
-body#assignment-2 > .grid-container {
+body.article > .grid-container {
   display: grid;
   grid-template-columns: 1fr 3fr 1.25fr;
   grid-template-areas: "left-pane content right-pane";
@@ -294,25 +294,25 @@ body#assignment-2 > .grid-container {
   margin-bottom: auto;
   width: 100%;
 }
-body#assignment-2 > .grid-container .content .grid-padding,
-body#assignment-2 > .grid-container .right-pane .grid-padding {
+body.article > .grid-container .content .grid-padding,
+body.article > .grid-container .right-pane .grid-padding {
   padding: 3em;
 }
-body#assignment-2 > .grid-container .content {
+body.article > .grid-container .content {
   grid-area: "content";
   display: flex;
   justify-content: center;
-  border-left: 1px solid #e4e4e4;
-  border-right: 1px solid #e4e4e4;
+  border-left: 1px solid rgb(228, 228, 228);
+  border-right: 1px solid rgb(228, 228, 228);
   width: 100%;
 }
-body#assignment-2 > .grid-container .content section {
+body.article > .grid-container .content section {
   margin: 3.5em 0;
 }
-body#assignment-2 > .grid-container .content section > * {
+body.article > .grid-container .content section > * {
   margin-bottom: 1.25em;
 }
-body#assignment-2 > .grid-container .content .section-title a {
+body.article > .grid-container .content .section-title a {
   text-decoration: none;
   color: black;
   opacity: 0.3;
@@ -320,102 +320,108 @@ body#assignment-2 > .grid-container .content .section-title a {
   font-weight: 400;
   transition: all 0.2s ease-out;
 }
-body#assignment-2 > .grid-container .content .section-title a:hover {
+body.article > .grid-container .content .section-title a:hover {
   opacity: 1;
 }
-body#assignment-2 > .grid-container .left-pane {
+body.article > .grid-container .left-pane {
   grid-area: "left-pane";
   align-self: start;
   position: sticky;
   top: 0;
 }
-body#assignment-2 > .grid-container .left-pane ul, body#assignment-2 > .grid-container .left-pane li {
+body.article > .grid-container .left-pane ul, body.article > .grid-container .left-pane li {
   margin: 0;
   padding: 0;
 }
-body#assignment-2 > .grid-container .left-pane ul {
+body.article > .grid-container .left-pane ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-body#assignment-2 > .grid-container .left-pane ul li {
+body.article > .grid-container .left-pane ul li {
   margin: 2em;
   font-size: 1.25em;
 }
-body#assignment-2 > .grid-container .left-pane ul li i {
+body.article > .grid-container .left-pane ul li i {
   color: black;
   opacity: 0.7;
 }
-body#assignment-2 > .grid-container .right-pane {
+body.article > .grid-container .right-pane {
   grid-area: "right-pane";
   align-self: start;
   position: sticky;
   top: 0;
 }
-body#assignment-2 > .grid-container .right-pane aside {
+body.article > .grid-container .right-pane aside {
   display: flex;
   flex-direction: column;
 }
-body#assignment-2 > .grid-container .right-pane aside > * {
+body.article > .grid-container .right-pane aside > * {
   margin: 0.5em 0;
 }
-body#assignment-2 > .grid-container a.external-link {
-  color: #3248ed;
+body.article > .grid-container a.external-link {
+  color: rgb(50, 72, 237);
   text-decoration: underline;
 }
-body#assignment-2 > .grid-container ul.link-list {
+body.article > .grid-container ul.link-list {
   list-style-type: decimal;
   margin: auto;
   padding-left: 1em;
 }
 @media (max-width: 1200px) {
-  body#assignment-2 > .grid-container {
+  body.article > .grid-container {
     grid-template-columns: auto;
     grid-template-areas: "content";
   }
 }
 @media (max-width: 1200px) {
-  body#assignment-2 > .grid-container .right-pane, body#assignment-2 > .grid-container .left-pane {
+  body.article > .grid-container .right-pane, body.article > .grid-container .left-pane {
     display: none;
   }
 }
-body#assignment-2 .content, body#assignment-2 .content > .grid-padding {
+body.article .content, body.article .content > .grid-padding {
   overflow: auto;
 }
-body#assignment-2 p, body#assignment-2 pre {
+body.article p, body.article pre {
   max-width: 80ch;
 }
-body#assignment-2 pre {
+body.article pre {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
-body#assignment-2 p {
+body.article p {
   color: rgba(0, 0, 0, 0.8);
 }
-body#assignment-2 pre {
+body.article pre {
   border-radius: 0.25em;
 }
-body#assignment-2 h1, body#assignment-2 strong {
+body.article h1, body.article strong {
   font-weight: 700;
 }
-body#assignment-2 main, body#assignment-2 section {
+body.article main, body.article section {
   margin-bottom: 1.5em;
 }
-body#assignment-2 h1, body#assignment-2 h2, body#assignment-2 h3, body#assignment-2 h4, body#assignment-2 h5, body#assignment-2 h6 {
+body.article h1, body.article h2, body.article h3, body.article h4, body.article h5, body.article h6 {
   line-height: 1;
 }
-body#assignment-2 h1 {
+body.article h1 {
   line-height: 1;
 }
-body#assignment-2 h1, body#assignment-2 h2 {
+body.article h1, body.article h2 {
   margin-bottom: 0.5em;
 }
-body#assignment-2 h3 {
+body.article h3 {
   text-transform: uppercase;
   font-size: 1em;
-  color: #3248ed;
+  color: rgb(50, 72, 237);
 }
-body#assignment-2 ul:not(.link-list) {
+body.article ul:not(.link-list) {
   list-style-type: none;
+}
+body.article .background-image {
+  background-image: url("../../media/78745131.jpg");
+  width: 100%;
+  height: 50em;
+  background-position: center;
 }
 
 /* PrismJS 1.29.0
@@ -494,7 +500,7 @@ pre[class*=language-] {
 
 .language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
   color: #9a6e3a;
-  background: rgba(255, 255, 255, 0.5);
+  background: hsla(0deg, 0%, 100%, 0.5);
 }
 
 .token.atrule, .token.attr-value, .token.keyword {
