@@ -9,7 +9,8 @@
 
 // Components
 @import
-  'components/card';
+  'components/card',
+  'components/star';
 
 // Layout
 @import
@@ -20,9 +21,7 @@
 @import
   'pages/index',
   'pages/assignment-1',
-  'pages/article',
-  'pages/assignment-3';
-
+  'pages/article';
 // Vendors
 @import
   'vendors/prism';
