@@ -4,57 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 5</title>
+    <link rel="stylesheet" href="stylesheets/css/main.css">
+    <script src="https://kit.fontawesome.com/5f0726adb4.js" crossorigin="anonymous"></script>
+    <title>Assignment 3</title>
 </head>
-<body>
-    <section id="comments">
-        <div class="section-title">
-            <h2>Comments <a href="#">#</a></h2>
+<body class="article">
+    <div class="grid-container">
+        <div class="left-pane">
+            <div class="grid-padding">
+                <section>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-print"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
         </div>
-        <p>
-            Comments are notes that you can leave inside your html. To write a
-            comment, you use the <code class="language-plaintext">&lt;--! --&gt;</code> tags.
-            This syntax tells the browser than anything inside the tags are comments and
-            should not be rendered as valid code.
-        </p>
-        <div class="code-example">
-            <p>Check out this comment example:</p>
-            <pre class="line-numbers">
-                <code class="language-html">
-                    &lt;div class="container-flex"&gt;
-                        &lt;section class="section-javascript"&gt;
-                            <code class="language-plaintext"><--! Change to a better title later --></code>
-                            &lt;h2&gt;Javascript Basics&lt;h2&gt;
-                            &lt;p&gt;Despite what people may think, JavaScript is quite easy to learn!&lt;p&gt;
-                        &lt;section&gt;
-                    &lt;div&gt;
-                </code>
-            </pre>
+        <div class="content">
+            <div class="grid-padding grid--content-max-width">
+                <main>
+                    <h1>Learning <strong>CSS</strong>: Responsive Webpages</h1>
+                    <p>
+                        In this article, you will be learning about x, y, and z.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias similique 
+                        quia laudantium, culpa debitis minus enim nemo praesentium autem error magni 
+                        nulla repellat explicabo veniam. Perspiciatis, laboriosam. Harum odio quo 
+                        autem at explicabo laudantium tenetur, veritatis dolorum. Ullam blanditiis 
+                        eos incidunt, ad possimus atque error voluptatibus velit numquam pariatur.
+                    </p>
+                </main>
+                <section id="queries">
+                    <div class="section-title">
+                        <h2>Media queries <a href="#queries">#</a></h2>
+                    </div>
+                    <p>
+                        Media queries let you have a responsive webpage based off the viewport dimensions.
+                    </p>
+                    <div class="code-example">
+                        <p>Here is an example of media queries:</p>
+                        <div class="example__query">
+                            <p class="query__text">
+                                The font color is red when on desktop (min-width media query)
+                                and blue on mobile.
+                            </p>
+                            <div id="multiple-selectors-example">   
+                                <p class="query__text">
+                                    Here is another example of media queries with multiple selectors. 
+                                    Green on desktop and yellow on mobile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="external-link">Read more</a>
+                </section>
+                <section id="flexbox">
+                    <div class="section-title">
+                        <h2>Flexbox <a href="#flexbox">#</a></h2>
+                    </div>
+                    <p>
+                        Flexbox helps make website layouts easy.
+                    </p>
+                    <div class="code-example">
+                        <p>Here is an example of flexbox with 3 columns and justify/alignment (resize for flex-direction: row media query):</p>
+                        <div class="example__flexbox">
+                            <div class="flexbox__column">
+                                <p>
+                                    Column 1
+                                </p>
+                            </div>
+                            <div class="flexbox__column">
+                                <p>
+                                    Column 2
+                                </p>
+                            </div>
+                            <div class="flexbox__column">
+                                <p>
+                                    Column 3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" class="external-link">Read more</a>
+                </section>
+            </div>
         </div>
-        <a href="https://www.w3schools.com/html/html_comments.asp" class="external-link">Read more about comments</a>
-    </section>
-
-    <section id="anchors">
-        <div class="section-title">
-            <h2>Anchors <a href="#anchors">#</a></h2>
+        <div class="right-pane">
+            <div class="grid-padding">
+                <aside>
+                    <h3>About the author</h3>
+                    <p>
+                        I'm a web developer and designer. In my free time, I like to
+                        make mock websites to practice my development and design skills.
+                    </p>
+                    <a href="https://vince1444.github.io/" class="external-link">Author Website</a>
+                </aside>
+            </div>
         </div>
-        <p>
-            The <code class="language-html">&lt;a&gt;</code> HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
-            Content within each <a> should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the <a> element will activate it.
-        </p>
-        <div class="code-example">
-            <p>A handy example of the <code class="language-html">&lt;a&gt;</code> tag:</p>
-            <pre class="line-numbers">
-                <code class="language-html">
-                    &lt;nav&gt;
-                        &lt;ul&gt;
-                            &lt;li&gt;&lt;a href="https://www.example-website.com" target="_blank"&gt;Link to an example website&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href="https://www.example-website-2.com" target="_blank"&gt;Link to another example website&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/nav&gt;
-                </code>
-            </pre>
-        </div>
-    </section>
+    </div>
+    <script src="javascript/prism.js"></script>
 </body>
 </html>
