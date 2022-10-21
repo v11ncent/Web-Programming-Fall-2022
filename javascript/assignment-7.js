@@ -1,7 +1,7 @@
 window.addEventListener('load', (event) => {
     console.log(switchCase('hEllo wOrld'));
     console.log(insertDashBetweenEvens(20120));
-    console.log(returnLastNthOfArray([7, 9, 0, -2], 3));
+    console.log(returnLastNthOfArray([7, 9, 0, -2]));
 });
 
 function switchCase(string) {
@@ -27,8 +27,8 @@ function insertDashBetweenEvens(number) {
 }
 
 function returnLastNthOfArray(array, n) {
-    if (typeof n === undefined) {
-        array.splice(0);
+    if (typeof n === 'undefined') {
+        return array.splice(-1);
     }
 
     return array.splice(-(n));
