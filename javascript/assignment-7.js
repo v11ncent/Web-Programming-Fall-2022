@@ -5,6 +5,7 @@ window.addEventListener('load', (event) => {
 });
 
 function switchCase(string) {
+    console.log('Part 1:');
     const newString = string.split('').map((character) => {
         return character === character.toUpperCase() ?
                       character.toLowerCase() :
@@ -15,6 +16,7 @@ function switchCase(string) {
 }
 
 function insertDashBetweenEvens(number) {
+    console.log('Part 2:');
     let numberArray = String(number).split('');
 
     for (let i = 0; i < numberArray.length; i++) {
@@ -27,6 +29,7 @@ function insertDashBetweenEvens(number) {
 }
 
 function returnLastNthOfArray(array, n) {
+    console.log('Part 3:');
     if (typeof n === 'undefined') {
         return array.splice(-1);
     }
