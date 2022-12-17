@@ -32,6 +32,9 @@
             <li class="card"><a href="./assignment-11.php">Assignment 11</a></li>
         </ul>
         <time></time>
+        <?php
+        include('index_footer.php');
+        ?>
     </main>
 </body>
 </html>
